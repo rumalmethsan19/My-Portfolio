@@ -28,20 +28,25 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+    <section id="contact" className="py-20 bg-[#0F172A] relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#38BDF8] rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <h2 className="text-4xl font-bold text-center text-[#E5E7EB] mb-12">
           Get In Touch
         </h2>
-        <div className="bg-white rounded-lg shadow-md p-8">
-          <p className="text-lg text-gray-700 text-center mb-8">
+        <div className="bg-[#1E293B] border border-[#38BDF8]/20 rounded-lg shadow-lg p-8">
+          <p className="text-lg text-[#94A3B8] text-center mb-8">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700 mb-2"
+                className="block text-sm font-medium text-[#E5E7EB] mb-2"
               >
                 Name
               </label>
@@ -52,13 +57,14 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-[#0F172A] border border-[#38BDF8]/30 rounded-lg text-[#E5E7EB] focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent placeholder-[#94A3B8]"
+                placeholder="Your name"
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 mb-2"
+                className="block text-sm font-medium text-[#E5E7EB] mb-2"
               >
                 Email
               </label>
@@ -69,13 +75,14 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-[#0F172A] border border-[#38BDF8]/30 rounded-lg text-[#E5E7EB] focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent placeholder-[#94A3B8]"
+                placeholder="your.email@example.com"
               />
             </div>
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700 mb-2"
+                className="block text-sm font-medium text-[#E5E7EB] mb-2"
               >
                 Message
               </label>
@@ -86,13 +93,14 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-[#0F172A] border border-[#38BDF8]/30 rounded-lg text-[#E5E7EB] focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent placeholder-[#94A3B8]"
+                placeholder="Your message here..."
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="px-8 py-3 bg-[#38BDF8] text-[#0F172A] rounded-lg font-semibold hover:bg-[#0EA5E9] hover:shadow-lg hover:shadow-[#38BDF8]/50 transition-all"
               >
                 Send Message
               </button>

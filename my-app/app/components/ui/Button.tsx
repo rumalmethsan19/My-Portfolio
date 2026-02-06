@@ -14,12 +14,12 @@ export default function Button({
   size = 'medium',
 }: ButtonProps) {
   const baseStyles =
-    'inline-block font-medium rounded-lg transition-all hover:scale-105 active:scale-95';
+    'inline-block font-semibold rounded-lg transition-all hover:scale-105 active:scale-95';
 
   const variantStyles = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg',
+    primary: 'bg-[#38BDF8] text-[#0F172A] hover:bg-[#0EA5E9] hover:shadow-lg hover:shadow-[#38BDF8]/50',
     secondary:
-      'bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50',
+      'bg-transparent text-[#38BDF8] border-2 border-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A]',
   };
 
   const sizeStyles = {
