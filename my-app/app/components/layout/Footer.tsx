@@ -2,12 +2,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-[#1E293B] border-t border-[#38BDF8]/20 text-[#E5E7EB] py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Copyright */}
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Your Name. All rights reserved.
+          <p className="text-[#94A3B8] text-sm mb-4 md:mb-0">
+            © {currentYear} Rumal Egodawatta. Built with Next.js & Tailwind CSS
           </p>
 
           {/* Social Links */}
@@ -16,7 +16,7 @@ export default function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#94A3B8] hover:text-[#38BDF8] transition-colors"
               aria-label="GitHub"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#94A3B8] hover:text-[#38BDF8] transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -39,17 +39,22 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="Twitter"
+              href="mailto:rumal@example.com"
+              className="text-[#94A3B8] hover:text-[#38BDF8] transition-colors"
+              aria-label="Email"
             >
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
           </div>
+        </div>
+        
+        {/* Additional Footer Info */}
+        <div className="mt-4 pt-4 border-t border-[#38BDF8]/10 text-center">
+          <p className="text-[#94A3B8] text-xs">
+            Designed & Developed with 💙 by Rumal
+          </p>
         </div>
       </div>
     </footer>
