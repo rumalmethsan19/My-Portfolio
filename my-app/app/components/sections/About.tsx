@@ -7,40 +7,88 @@ export default function About() {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-4xl font-bold text-center text-[#E5E7EB] mb-12">
+        <h2 className="text-4xl font-bold text-center text-[#E5E7EB] mb-16 mt-4">
           About Me
         </h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-            <p className="text-lg text-[#94A3B8] leading-relaxed">
-              I'm a passionate developer with a love for creating innovative solutions
-              to complex problems. With expertise in modern web technologies, I specialize
-              in building scalable and performant applications.
-            </p>
-            <p className="text-lg text-[#94A3B8] leading-relaxed">
-              My journey in tech started several years ago, and since then, I've worked
-              on various projects ranging from small business websites to large-scale
-              enterprise applications.
-            </p>
-            <p className="text-lg text-[#94A3B8] leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing knowledge with the
-              developer community.
-            </p>
+        
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Side - Name and Description */}
+          <div className="space-y-8">
+            {/* Name */}
+            <div>
+              <h3 className="text-4xl md:text-7xl font-bold text-[#E5E7EB] mb-2">
+                Rumal Egodawaththa
+              </h3>
+              <div className="h-1 w-24 bg-[#38BDF8] rounded-full"></div>
+            </div>
+            
+            {/* Description */}
+            <div className="space-y-4 text-[#94A3B8] leading-relaxed">
+              <p>
+                I am Rumal, currently pursuing a <span className="text-[#E5E7EB] font-semibold">BSc in Management Information Systems</span>, where I am developing a strong foundation in technology, programming, and systems analysis. Over my years of study, I have cultivated skills in problem-solving, software development, and data-driven decision-making.
+              </p>
+              <p>
+                I am passionate about learning new technologies and continuously expanding my knowledge in areas like <span className="text-[#38BDF8] font-semibold">programming</span>, <span className="text-[#38BDF8] font-semibold">AI & ML</span>, and <span className="text-[#38BDF8] font-semibold">web development</span>. With a growth-oriented mindset, I enjoy tackling challenges, applying analytical thinking, and delivering practical solutions.
+              </p>
+              <p>
+                My goal is to build a meaningful career where I can leverage my technical expertise, creativity, and dedication to make a <span className="text-[#E5E7EB] font-semibold">positive impact</span> in the professional world.
+              </p>
+            </div>
           </div>
-          <div className="bg-[#1E293B] border border-[#38BDF8]/20 rounded-lg p-8 hover:border-[#38BDF8]/50 transition-all">
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-xl font-semibold text-[#E5E7EB] mb-2">Experience</h3>
-                <p className="text-[#94A3B8]">5+ years in web development</p>
+          
+          {/* Right Side - Timeline Boxes */}
+          <div className="space-y-6">
+            {/* Box 1 */}
+            <div className="group bg-[#1E293B] border border-[#38BDF8]/20 rounded-xl p-6 hover:border-[#38BDF8]/50 hover:shadow-lg hover:shadow-[#38BDF8]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#38BDF8]/10 border border-[#38BDF8]/30 rounded-lg flex items-center justify-center text-2xl group-hover:bg-[#38BDF8]/20 transition-colors">
+                  🎓
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-semibold text-[#E5E7EB] mb-2 group-hover:text-[#38BDF8] transition-colors">
+                    Started MIS Degree
+                  </h4>
+                  <p className="text-sm text-[#38BDF8] mb-2 font-medium">2023</p>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">
+                    BSc in Management Information Systems at NSBM Green University, focusing on software development, systems analysis, and information technology.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#E5E7EB] mb-2">Education</h3>
-                <p className="text-[#94A3B8]">Bachelor's in Computer Science</p>
+            </div>
+
+            {/* Box 2 */}
+            <div className="group bg-[#1E293B] border border-[#38BDF8]/20 rounded-xl p-6 hover:border-[#38BDF8]/50 hover:shadow-lg hover:shadow-[#38BDF8]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#38BDF8]/10 border border-[#38BDF8]/30 rounded-lg flex items-center justify-center text-2xl group-hover:bg-[#38BDF8]/20 transition-colors">
+                  💻
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-semibold text-[#E5E7EB] mb-2 group-hover:text-[#38BDF8] transition-colors">
+                    Started Learning Programming
+                  </h4>
+                  <p className="text-sm text-[#38BDF8] mb-2 font-medium">Journey Begins</p>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">
+                    Began learning programming fundamentals, including problem-solving, logic building, and core concepts using languages like Python and Java.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#E5E7EB] mb-2">Location</h3>
-                <p className="text-[#94A3B8]">Your City, Country</p>
+            </div>
+
+            {/* Box 3 */}
+            <div className="group bg-[#1E293B] border border-[#38BDF8]/20 rounded-xl p-6 hover:border-[#38BDF8]/50 hover:shadow-lg hover:shadow-[#38BDF8]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#38BDF8]/10 border border-[#38BDF8]/30 rounded-lg flex items-center justify-center text-2xl group-hover:bg-[#38BDF8]/20 transition-colors">
+                  🤖
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-semibold text-[#E5E7EB] mb-2 group-hover:text-[#38BDF8] transition-colors">
+                    AI & Machine Learning Path
+                  </h4>
+                  <p className="text-sm text-[#38BDF8] mb-2 font-medium">Current Focus</p>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">
+                    Currently building a strong foundation in Python with the long-term goal of becoming an AI and Machine Learning Engineer.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
